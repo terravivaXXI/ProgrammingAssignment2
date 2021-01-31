@@ -51,3 +51,6 @@ cacheSolve <- function(x, ...) {
        
 }
 
+## Testing
+firstMatrix <- makeCacheMatrix(matrix(1:16, nrow = 4, ncol=4))
+cacheSolve(firstMatrix)
