@@ -1,4 +1,5 @@
-## In general, this pair of functions will take a matrix x as an input and return the inverse of 
+## In general, this pair of functions will take a matrix (I want to call it "x" but that's very wrong, but maybe helpful)
+# as an input and return the inverse of 
 # such matrix with the condition that if you had already calculated the inverse previously
 # it will not be calculated again but retrieved from memory
 
@@ -52,5 +53,6 @@ cacheSolve <- function(x, ...) {
 }
 
 ## Testing
-firstMatrix <- makeCacheMatrix(matrix(1:16, nrow = 4, ncol=4))
+firstMatrix <- makeCacheMatrix(matrix(1:4, nrow = 2, ncol= 2))
+cacheSolve(firstMatrix)
 cacheSolve(firstMatrix)
